@@ -476,6 +476,8 @@ export default class Dropdown extends PureComponent {
     return `${index}-${valueExtractor(item, index)}`;
   }
 
+  txRef = React.createRef();
+
   renderBase(props) {
     let { value } = this.state;
     let {
@@ -508,6 +510,7 @@ export default class Dropdown extends PureComponent {
     return (
       <TextField
         label=''
+        ref={this.txRef}
         labelHeight={dropdownOffset.top - Platform.select({ ios: 1, android: 2 })}
 
         {...props}
@@ -515,7 +518,7 @@ export default class Dropdown extends PureComponent {
         value={title}
         editable={false}
         onChangeText={undefined}
-        renderAccessory={renderAccessory}
+        renderRightAccessory={renderAccessory}
       />
     );
   }
