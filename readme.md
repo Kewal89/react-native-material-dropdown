@@ -32,7 +32,11 @@ Material dropdown with consistent behaviour on iOS and Android
 ## Installation
 
 ```bash
-npm install --save react-native-material-dropdown
+npm install --save https://github.com/Kewal89/react-native-material-dropdown.git
+```
+
+```bash
+yarn add --save https://github.com/Kewal89/react-native-material-dropdown.git
 ```
 
 ## Usage
